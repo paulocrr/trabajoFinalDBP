@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.paulo.mychat.EditarContacto">
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:text="Editar Contacto"/>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_nombre"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/titulo"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_apellido"
+        android:layout_below="@+id/input_layout_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_apellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Apellido" />
+
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout_correo"
+        android:layout_below="@+id/input_layout_apellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correo" />
+
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/btn_Editar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/input_layout_correo"
+        android:drawableRight="@drawable/ic_edit"
+        android:drawableTint="@android:color/white"
+        android:text="Editar"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>
